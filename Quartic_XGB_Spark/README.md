@@ -35,3 +35,24 @@ After I created all the individual steps, I can define the actual pipeline and t
 #### Step 7: Saving the model
 
 The input DataFrame will be transformed multiple times and in the end will produce the model trained with our data. Model will be saved in order to be used in the testing phase.
+
+### Prediction
+
+Spark Structured Streaming is used to stream the data from a file. 
+
+#### Step 1: Creating the input read stream
+Once again creating the spark session and define a schema for the data and input streaming DataFrame, df. The input path has to be a directory where I store the csv file. It can contain one or more files that have the same schema.
+
+#### Step 2: Loading the XGBoost model
+
+In the object XGBoostModel I load the pre trained model that will be applied for each new batch of rows I read in the stream.
+
+#### Step 3: Defining custom ML sink
+
+In order to be able to apply the classifier to new data I need to create a new sink (the interface between the stream and the output, which in my case is the XGBoost model). For this I need a custom sink ( MLSink ), an abstract sink provider ( MLSinkProvider ) and an implementation of the provider ( XGBoostMLSinkProvider ).
+
+#### Step 4: Writing the data in my custom sink
+
+The last step is to define a query that writes the data in my custom sink. A checkpoint location also has to be defined so that the application “remembers” the latest rows read in the stream in case of a failure. If I run the program each new batch of data will be displayed on the console containing also the predicted labels.
+
+
