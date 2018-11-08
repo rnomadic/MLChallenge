@@ -1,11 +1,11 @@
 ## PySpark ML and XGBoost tested on the Kaggle Titanic dataset
 
 ### Instruction to make pyspark with Anaconda distribution and 
-conda create --name spark python=3
-source activate spark
-conda install jupyter notebook 
-conda install -c conda-forge pyspark 
-conda install -c conda-forge findspark 
+conda create --name spark python=3 <br>
+source activate spark <br>
+conda install jupyter notebook  <br>
+conda install -c conda-forge pyspark  <br>
+conda install -c conda-forge findspark <br>
 
 #### Spark installation guide
 
@@ -19,9 +19,9 @@ conda install -c conda-forge findspark
 
 $ ln -s /tmp/spark-2.3.0 /tmp/spark̀
 
-5. Open .bash_profile and update below 2 line
+5. Open .bash_profile and update below 2 line <br>
 export SPARK_HOME=/tmp/spark <br>
 export PATH=$SPARK_HOME/bin:$PATH <br>
 
-6. Install JAVA
+6. Install JAVA <br>
 conda install -c cyclus java-jdk
