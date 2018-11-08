@@ -19,9 +19,9 @@ conda install -c conda-forge findspark
 
 $ ln -s /tmp/spark-2.3.0 /tmp/spark̀
 
-5. pen .bash_profile and update below 2 line
-export SPARK_HOME=/tmp/spark
-export PATH=$SPARK_HOME/bin:$PATH
+5. Open .bash_profile and update below 2 line
+export SPARK_HOME=/tmp/spark <br>
+export PATH=$SPARK_HOME/bin:$PATH <br>
 
 6. Install JAVA
 conda install -c cyclus java-jdk
