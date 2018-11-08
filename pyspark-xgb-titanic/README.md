@@ -1,4 +1,4 @@
-### PySpark ML and XGBoost tested on the Kaggle Titanic dataset
+## PySpark ML and XGBoost tested on the Kaggle Titanic dataset
 
 ### Instruction to make pyspark with Anaconda distribution and 
 conda create --name spark python=3
@@ -7,10 +7,10 @@ conda install jupyter notebook
 conda install -c conda-forge pyspark 
 conda install -c conda-forge findspark 
 
-Spark installation guide
-————————————
+#### Spark installation guide
+
 First download spark tar and extract from below page
-https://www.apache.org/dyn/closer.lua/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz
+[Spark](https://www.apache.org/dyn/closer.lua/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz)
 $ tar -xzf spark-2.3.0-bin-hadoop2.7.tgz
 Copy to /tmp
 $ mv spark-2.3.0-bin-hadoop2.7 /tmp/spark-2.3.0
