@@ -1,6 +1,6 @@
 ## PySpark ML and XGBoost tested on the Kaggle Titanic dataset
 
-### Instruction to make pyspark with Anaconda distribution and 
+### Instruction to make pyspark with Anaconda distribution on OSX
 conda create --name spark python=3 <br>
 source activate spark <br>
 conda install jupyter notebook  <br>
